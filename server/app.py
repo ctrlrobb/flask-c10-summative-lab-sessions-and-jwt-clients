@@ -1,6 +1,16 @@
 from config import app, db
 from flask_restful import Api
 from resources import Signup, Login, Logout, CheckSession, NoteList, NoteDetail
+import logging.config
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log'),
+        logging.StreamHandler()
+    ]
+)
 
 api = Api(app)
 

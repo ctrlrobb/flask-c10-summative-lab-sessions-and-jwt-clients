@@ -16,8 +16,9 @@ flask-bcrypt = "==1.0.1"
 flask-cors = "*"
 werkzeug = "==2.2.2"
 pytest = "==7.2.0"
+python-dotenv = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.14"
